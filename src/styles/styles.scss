@@ -9,6 +9,7 @@ html {
 	width: 100vw;
 	font-size: 62.5%;
 	font-family: "DM Sans", sans-serif;
+	overflow-x: hidden;
 	// font-family: 'Inter', sans-serif;
 }
 
@@ -93,10 +94,10 @@ $white-off: #faf8f7;
 
 .button__icon {
 	display: inline-block;
-	background-position: center;
 	width: 15px;
 	height: 20px;
 	background-image: url("/assets/icons/arrow_down.svg");
+	background-position: center;
 }
 
 //? Main
@@ -197,4 +198,80 @@ $white-off: #faf8f7;
 		background-color: $soft-orange;
 		border-radius: 9px;
 	}
+}
+
+//? Batabit features (Second section)
+
+.batabit-features {
+	// height: 150vh;
+	padding: 35px 0;
+	background-color: $black;
+	color: $white;
+	max-width: 500px;
+	min-width: 300px;
+
+	div {
+		text-align: center;
+	}
+}
+
+.batabit-features__title {
+	margin: 0 auto;
+}
+
+.batabit-features__description {
+	margin: 20px auto;
+}
+
+.batabit-service {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	max-width: 500px;
+	min-width: 300px;
+	height: 600px;
+
+	section {
+		margin-bottom: 10px;
+		padding: 15px;
+		width: 90%;
+		background-color: #282623;
+		border-radius: 5px;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+	}
+}
+
+.batabit-service__title {
+	margin: 6px 0;
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+}
+
+.batabit-service__description {
+	font-size: 1.4rem;
+	color: #808080;
+	line-height: 18px;
+	font-weight: 500;
+}
+
+//? Bitcoin adverstising (fourth section)
+
+.bitcoin-adverstising {
+	height: 500px;
+}
+
+.bitcoin-adverstising__img {
+	height: 100%;
+	width: 100%;
+	max-width: 500px;
+	min-width: 320px;
+	padding-top: 60px;
+	text-align: center;
+	background-image: url("/assets/images/bitcoin-girl.svg");
+	background-position: center;
+	background-size: cover;
+	color: $white;
 }
