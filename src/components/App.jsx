@@ -4,6 +4,7 @@ import "../styles/styles.scss";
 
 import batataHeader from "/assets/images/batabit-header.svg";
 import bitcoin from "/assets/images/bitcoin.svg";
+import batabit from "/assets/images/batabit.svg";
 import arrowUp from "/assets/icons/trending-up.png";
 import arrowDown from "/assets/icons/trending-down.png";
 import checkCircle from "/assets/icons/check-circle.svg";
@@ -36,7 +37,7 @@ function App() {
 						tendencias.
 					</p>
 					<button className="button button-header">
-						<a src="#" className="button__link">
+						<a href="#plans" className="button__link">
 							Conoce Nuestros Planes <span className="button__icon"></span>{" "}
 						</a>
 					</button>
@@ -85,6 +86,11 @@ function App() {
 				{/* second section */}
 
 				<section className="batabit-features">
+					<img
+						className="batabit-features__logo"
+						src={batabit}
+						alt="batabit"
+					/>
 					<div>
 						<h2 className="title batabit-features__title">
 							Creamos un producto sin comparación.
@@ -159,7 +165,38 @@ function App() {
 						</h2>
 					</div>
 				</section>
-				<section></section>
+
+				{/* fourth section */}
+
+				<section id="plans">
+					<div>
+						<h2 className="title plans__title ">
+							Escoge el plan que mejor se ajusta a ti.
+						</h2>
+						<p className="description plans__description  ">
+							Cualquier te da acceso completo a nuestra plataforma.
+						</p>
+					</div>
+					<section className="plans__cards">
+						<article className="plans__card">
+							<p className="plans__card-head">Recomendado</p>
+							<div className="plans__card-body">
+								<h3 className="description plans__card-title ">
+									Pago Anual
+								</h3>
+								<p className="plans__card-price">
+									<span>$</span> 99
+								</p>
+								<p className="plans__card-description">
+									*Ahorras $129 comparado al plan mensual.
+								</p>
+								<button className="button plans__card-button ">
+									Escoger este <span></span>{" "}
+								</button>
+							</div>
+						</article>
+					</section>
+				</section>
 			</main>
 		</>
 	);
