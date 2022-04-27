@@ -400,3 +400,34 @@ $white-off: #faf8f7;
 		background-image: url("/assets/icons/arrow-right-orange.svg");
 	}
 }
+
+//? Footer
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 150px;
+	background-color: $orange;
+	color: $white;
+}
+
+.footer__social {
+	height: inherit;
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 10px;
+		height: inherit;
+		list-style: none;
+	}
+
+	a {
+		font-size: 1.4rem;
+		font-weight: 500;
+		text-decoration: none;
+		color: inherit;
+	}
+}

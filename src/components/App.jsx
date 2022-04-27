@@ -11,6 +11,7 @@ import checkCircle from "/assets/icons/check-circle.svg";
 import clock from "/assets/icons/clock.svg";
 import dollar from "/assets/icons/dollar-sign.svg";
 import eye from "/assets/icons/eye.svg";
+import batabitFooter from "/assets/images/batabit-footer.svg";
 
 function App() {
 	const bitcoins = {
@@ -197,6 +198,27 @@ function App() {
 						</article>
 					</section>
 				</section>
+
+				{/* footer */}
+
+				<footer className="footer">
+					<section className="footer__social">
+						<ul>
+							<li>
+								<a href="#">Linkedin</a>
+							</li>
+							<li>
+								<a href="#">Crunchbase</a>
+							</li>
+							<li>
+								<a href="#">Hackernews</a>
+							</li>
+						</ul>
+					</section>
+					<section className="footer__logo">
+						<img src={batabitFooter} alt="logo-footer" />
+					</section>
+				</footer>
 			</main>
 		</>
 	);
