@@ -213,6 +213,9 @@ function App() {
 							<li>
 								<a href="#">Hackernews</a>
 							</li>
+							<li>
+								<a href="#">Kevin</a>
+							</li>
 						</ul>
 					</section>
 					<section className="footer__logo">
