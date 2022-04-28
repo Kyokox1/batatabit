@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base:"/batatabit/",
+  base:"https://kyokox1.github.io/batatabit/",
   plugins: [react()]
 })
