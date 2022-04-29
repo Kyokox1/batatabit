@@ -318,14 +318,12 @@ $white-off: #faf8f7;
 //* cards
 
 .plans__cards {
-	scroll-behavior: smooth;
 	display: flex;
-	gap: 25px;
+	gap: 50px;
 	// justify-content: center;
 	align-items: center;
 	height: 300px;
-	width: 100%;
-	max-width: 900px;
+	width: 90%;
 	min-width: 320px;
 	margin: 0 auto;
 	padding: 0 50px 0;
