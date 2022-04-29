@@ -318,6 +318,7 @@ $white-off: #faf8f7;
 //* cards
 
 .plans__cards {
+	scroll-behavior: smooth;
 	display: flex;
 	gap: 25px;
 	// justify-content: center;
@@ -327,7 +328,7 @@ $white-off: #faf8f7;
 	max-width: 900px;
 	min-width: 320px;
 	margin: 0 auto;
-	padding: 0 25px 0;
+	padding: 0 50px 0;
 	overflow-x: scroll;
 	overscroll-behavior-x: contain;
 	scroll-snap-type: x proximity;

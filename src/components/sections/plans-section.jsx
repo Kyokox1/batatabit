@@ -1,16 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 
 export const PlansSection = () => {
-	// const slide = useRef(null)
-
-	// const siguiente = ()=>{
-
-	// 	slide.current.style.transition=`3s all ease-out`
-	// 	slide.current.scrollTo({
-	// 		right:500
-	// 	})
-	// }
-
 	return (
 		<section id="plans">
 			<div>
@@ -36,9 +26,8 @@ export const PlansSection = () => {
 						</p>
 						<button
 							className="button plans__card-button "
-							onClick={siguiente}
 						>
-							Escoger este <span></span>{" "}
+							Escoger este <span></span>
 						</button>
 					</div>
 				</article>
@@ -53,11 +42,11 @@ export const PlansSection = () => {
 							*Ahorras $129 comparado al plan mensual.
 						</p>
 						<button className="button plans__card-button ">
-							Escoger este <span></span>{" "}
+							Escoger este <span></span>
 						</button>
 					</div>
 				</article>
-				<article className="plans__card">
+				<article className="plans__card" id="plan3" >
 					<p className="plans__card-head hidden ">Recomendado</p>
 					<div className="plans__card-body">
 						<h3 className="description plans__card-title ">
@@ -70,7 +59,7 @@ export const PlansSection = () => {
 							*Ahorras $129 comparado al plan mensual.
 						</p>
 						<button className="button plans__card-button ">
-							Escoger este <span></span>{" "}
+							Escoger este <span></span>
 						</button>
 					</div>
 				</article>
