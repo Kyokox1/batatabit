@@ -24,9 +24,7 @@ export const PlansSection = () => {
 						<p className="plans__card-description">
 							*Ahorras $129 comparado al plan mensual.
 						</p>
-						<button
-							className="button plans__card-button "
-						>
+						<button className="button plans__card-button ">
 							Escoger este <span></span>
 						</button>
 					</div>
@@ -46,7 +44,7 @@ export const PlansSection = () => {
 						</button>
 					</div>
 				</article>
-				<article className="plans__card" id="plan3" >
+				<article className="plans__card" id="plan3">
 					<p className="plans__card-head hidden ">Recomendado</p>
 					<div className="plans__card-body">
 						<h3 className="description plans__card-title ">

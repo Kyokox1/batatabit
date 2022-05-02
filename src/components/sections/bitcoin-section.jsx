@@ -12,8 +12,17 @@ export const BitcoinSection = () => {
 		Stellar: "$ 4.96"
 	};
 
+	const comisions = {
+		Bitrade: "$ 12.96",
+		Bitpreco: "$ 13.07",
+		Novadax: "$ 13.15",
+		Coinext: "$ 14.96"
+	};
+
 	const bitcoinsArray = Object.entries(bitcoins);
 	console.log(bitcoinsArray);
+
+	const comisionsArray = Object.entries(comisions);
 
 	return (
 		<section className="bitcoin">
@@ -26,25 +35,41 @@ export const BitcoinSection = () => {
 				</p>
 			</div>
 			<section className="bitcoin__table">
-				<p>Monedas.</p>
-				<table>
-					{bitcoinsArray.map((el, i) => (
-						<tr key={i}>
-							<td className="bitcoin__table-left-column">{el[0]}</td>
-							<td className="bitcoin__table-rigth-column">
-								{el[1]}
-								<img
-									className="bitcoin__table-arrow"
-									src={i === 1 ? arrowUp : arrowDown}
-									alt="trendingArrow"
-								/>
-							</td>
-						</tr>
-					))}
-				</table>
-				<p className="bitcoin__table-date">
-					<b>Actualizado:</b> 24 Abril 23:45{" "}
-				</p>
+				<div>
+					<p>Monedas.</p>
+					<table>
+						{bitcoinsArray.map((el, i) => (
+							<tr key={i}>
+								<td className="bitcoin__table-left-column">{el[0]}</td>
+								<td className="bitcoin__table-rigth-column">
+									{el[1]}
+									<img
+										className="bitcoin__table-arrow"
+										src={i === 1 ? arrowUp : arrowDown}
+										alt="trendingArrow"
+									/>
+								</td>
+							</tr>
+						))}
+					</table>
+					<p className="bitcoin__table-date">
+						<b>Actualizado:</b> 24 Abril 23:45
+					</p>
+				</div>
+				<div>
+					<p className="table-title-blue">Comisiones</p>
+					<table>
+						{comisionsArray.map((el, i) => (
+							<tr key={i}>
+								<td className="bitcoin__table-left-column">{el[0]}</td>
+								<td className="bitcoin__table-rigth-column">{el[1]}</td>
+							</tr>
+						))}
+					</table>
+					<p className="bitcoin__table-date table-date-blue">
+						<b>Actualizado:</b> 24 Abril 23:48
+					</p>
+				</div>
 			</section>
 		</section>
 	);

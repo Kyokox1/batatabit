@@ -1,0 +1,21 @@
+@media (min-width: 910px) {
+	.batabit-service {
+		flex-direction: row;
+		flex-wrap: wrap;
+		max-width: 910px;
+
+		section {
+			max-width: 400px;
+		}
+	}
+
+	.footer__social ul {
+		flex-direction: row;
+		align-items: center;
+		gap: 100px;
+	}
+
+	.bitcoin__table {
+		width: 1000px;
+	}
+}

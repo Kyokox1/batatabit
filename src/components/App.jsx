@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../styles/styles.scss";
+import "../styles/tablet.scss";
 
 import { Header } from "./sections/header";
 import { BitcoinSection } from "./sections/bitcoin-section";
