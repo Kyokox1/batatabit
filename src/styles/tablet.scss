@@ -9,13 +9,22 @@
 		}
 	}
 
+	//? footer
 	.footer__social ul {
 		flex-direction: row;
 		align-items: center;
 		gap: 100px;
 	}
 
+	//? bitcoin section (first Section)
+
 	.bitcoin__table {
 		width: 1000px;
+	}
+
+	//? plans section (fourth section)
+
+	.plans__cards {
+		justify-content: center;
 	}
 }
