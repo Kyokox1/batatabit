@@ -8,12 +8,10 @@
 			max-width: 400px;
 		}
 	}
-
-	//? footer
-	.footer__social ul {
-		flex-direction: row;
-		align-items: center;
-		gap: 100px;
+	// ?header
+	.button:hover {
+		background-color: #f5e0e0;
+		transition: all 0.3s ease-in-out;
 	}
 
 	//? bitcoin section (first Section)
@@ -26,5 +24,13 @@
 
 	.plans__cards {
 		justify-content: center;
+		overflow-x: hidden;
+	}
+
+	//? footer
+	.footer__social ul {
+		flex-direction: row;
+		align-items: center;
+		gap: 100px;
 	}
 }
